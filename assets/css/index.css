@@ -1,0 +1,308 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    height: 67px;
+    background-image: linear-gradient(#fd9f6f,#e07540);
+    border-bottom: 5px solid #8d6b43d0;
+}
+@font-face{
+    font-family: 'Lemon-Regular';
+    src: url(../html/fonts/Lemon-Regular.ttf);
+}
+@font-face{
+    font-family: 'MATURASC';
+    src: url(../html/fonts/MATURASC.TTF);
+}
+.blog{
+    display: block;
+    position: relative;
+    width: 100px;
+    top: 10px;
+    left: 100px;
+    font-size: 40px;
+    font-weight: bold;
+    color:  rgb(71, 71, 71);
+    font-family: 'MATURASC','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* 菜单栏 */
+.menu{
+    height: 35px;
+    width: 60px;
+    position: absolute;
+    top: 15px;
+    left: 1000px;
+    background: #99cc99;
+    border: 5px solid rgb(134, 133, 133);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    
+}
+
+.menu-icon{
+    background: url(../html/images/sanxian.png) no-repeat;
+    height: 35px;
+    width: 35px;
+    margin: 6px 15px;
+}
+.menu:hover{
+    cursor: pointer;
+    background-color: #ffac83;
+}
+
+aside{
+    display: none;
+    width: 100px;
+    height: 155px;
+    background-color: #ffac83;
+    position: absolute;
+    left: -25px;
+    top: 38px;
+    z-index: 99;
+    border: 5px solid rgb(134, 133, 133);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.menu:hover aside{
+    display: block;
+}
+li{
+    list-style: none;
+}
+.menu aside ul li {
+    height: 30px;
+    padding-bottom: 5px;
+    padding-top: 15px;
+    text-align: center;
+    color: rgb(134, 133, 133);
+    cursor: pointer;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+.menu aside ul li:hover{
+    background-color: #ffffcc;
+    border-radius: 2px;
+    box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.2) ;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+.menu aside ul li a{
+    text-decoration: none;
+    color: rgb(114, 104, 82);
+}
+.menu aside ul li a:hover{
+    color: #a9aca9;
+}
+/* 主页版图 */
+.banner{
+    height: 500px;
+    background-color: #ffffcc;
+}
+.card{
+    height: 300px;
+    width: 1000px;
+    position: relative;
+    top: 70px;
+    margin: 0 auto;
+    background-color:#fff1cc;
+    border:6px solid rgb(134, 134, 134);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    /*卡片从右到左动画效果*/animation: card 1s 1;
+    -webkit-animation: card 1s 1;
+    -moz-animation: card 1s 1;
+    -ms-animation: card 1s 1;
+    -o-animation: card 1s 1;
+}
+.card:hover{
+    box-shadow:3px 3px 5px ;
+    top: 60px;
+}
+/* 卡片从右到左动画效果 */
+@keyframes card{
+    0% {
+    right: -500px;
+    transform: rotate(9deg);
+    -webkit-transform: rotate(9deg);
+    -moz-transform: rotate(9deg);
+    -ms-transform: rotate(9deg);
+    -o-transform: rotate(9deg);
+}
+    100%{right: 0;}
+}
+@-moz-keyframes card{
+    0% {
+    right: -500px;
+    transform: rotate(9deg);
+    -webkit-transform: rotate(9deg);
+    -moz-transform: rotate(9deg);
+    -ms-transform: rotate(9deg);
+    -o-transform: rotate(9deg);
+}
+    100%{right: 0;}
+}
+@-webkit-keyframes card{
+    0% {
+    right: -500px;
+    transform: rotate(9deg);
+    -webkit-transform: rotate(9deg);
+    -moz-transform: rotate(9deg);
+    -ms-transform: rotate(9deg);
+    -o-transform: rotate(9deg);
+}
+    100%{right: 0;}
+}
+@-o-keyframes card{
+    0% {
+    right: -500px;
+    transform: rotate(9deg);
+    -webkit-transform: rotate(9deg);
+    -moz-transform: rotate(9deg);
+    -ms-transform: rotate(9deg);
+    -o-transform: rotate(9deg);
+}
+    100%{right: 0;}
+}
+/* 照片 */
+.photo{
+    background: url(../html/images/pic.png) no-repeat;
+    background-size: contain;
+    width: 170px;
+    height: 170px;
+    position: relative;
+    float: left;
+    top:60px;
+    left: 70px;
+    bottom: 70px;
+    border:5px solid rgb(71, 71, 71);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.photo:hover{
+    box-shadow:5px 5px 5px;
+}
+.introduction{
+    float: left;
+    position: relative;
+    height: 190px;
+    width: 650px;
+    top: 55px;
+    left: 100px;
+    background-color: #fafde8;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.introduction li:nth-child(1),.introduction li:nth-child(3){
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.introduction li:nth-child(1){
+    margin-left: 30px;
+}
+.introduction li:nth-child(3){
+    margin-left: 90px;
+}
+.introduction li:nth-child(2),.introduction li:nth-child(4){
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    line-height: 35px;
+    margin-top: 10px;
+    
+}
+.introduction li:nth-child(5){
+    font-family: 'MATURASC','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    position:absolute;
+    margin-top: 80px;
+    margin-left:80px;
+    cursor: pointer;
+}
+.introduction li:nth-child(5) a{
+    text-decoration: none;
+    color: black;
+}
+.introduction li{
+    float: left;
+}
+
+.introduction li:hover{
+    color: rgb(80, 72, 62);
+    border-bottom: 4px solid #99cc99;
+}
+.socialMedia{
+    position: absolute;
+    top: 150px;
+    left: 300px;
+}
+.socialMedia img{
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+    border: 3px solid rgb(71, 71, 71);
+    box-sizing: border-box;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: 0 0 0 16px #99cc99 inset;
+}
+
+.socialMedia img:hover{
+    box-shadow: 0 0 0 16px #fda67b inset;
+}
+
+footer{
+    height: 200px;
+    background-color: #99cc99;
+}
+.wenzi{
+    width: 500px;
+    height: 100px;
+    font-family: 'Comic Sans MS','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin:0 auto;
+    text-align: center;
+    padding-top:70px;
+    color: #666866;
+}

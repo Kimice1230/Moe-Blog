@@ -1,0 +1,319 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #ffffcc;
+}
+li{
+    list-style: none;
+}
+@font-face{
+    font-family: 'Lemon-Regular';
+    src: url(../html/fonts/Lemon-Regular.ttf);
+}
+@font-face{
+    font-family: 'MATURASC';
+    src: url(../html/fonts/MATURASC.TTF);
+}
+header{
+    height: 67px;
+    background-image: linear-gradient(#fd9f6f,#e07540);
+    border-bottom: 5px solid #8d6b43d0;
+    margin-bottom: 50px;
+}
+.blog{
+    display: block;
+    position: relative;
+    width: 100px;
+    top: 10px;
+    left: 100px;
+    font-size: 40px;
+    font-weight: bold;
+    color:  rgb(100,100,100);
+    font-family: 'MATURASC','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* 菜单栏 */
+.menu{
+    height: 35px;
+    width: 60px;
+    position: absolute;
+    top: 15px;
+    right: 140px;
+    background: #99cc99;
+    border: 5px solid rgb(134, 133, 133);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    z-index: 1000;
+}
+
+.menu-icon{
+    background: url(../html/images/sanxian.png) no-repeat;
+    height: 35px;
+    width: 35px;
+    margin: 6px 15px;
+}
+.menu:hover{
+    cursor: pointer;
+    background-color: #ffac83;
+}
+
+.menu aside{
+    display: none;
+    width: 100px;
+    height: 155px;
+    background-color: #ffac83;
+    position: absolute;
+    left: -25px;
+    top: 38px;
+    z-index: 99;
+    border: 5px solid rgb(134, 133, 133);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.menu:hover aside{
+    display: block;
+}
+li{
+    list-style: none;
+}
+.menu aside ul li {
+    height: 30px;
+    padding-bottom: 5px;
+    padding-top: 15px;
+    text-align: center;
+    color: rgb(134, 133, 133);
+    cursor: pointer;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+.menu aside ul li:hover{
+    background-color: #ffffcc;
+    box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.2) ;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+.menu aside ul li a{
+    text-decoration: none;
+    color: rgb(114, 104, 82);
+}
+.menu aside ul li a:hover{
+    color: #a9aca9;
+}
+.main{
+    width: 900px;
+    height: 2200px ;
+    border: 5px solid #a9a9a9;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #fff1cc;
+}
+.main .post{
+    width: 880px;
+    height: 1900px;
+    margin: 0 auto;
+}
+.main .post h1{
+    display: block;
+    position: relative;
+    width: 860px;
+    height: 40px;
+    top: 30px;
+    left: 20px;
+    line-height: 40px;
+    color: #494949;
+    font-size: 40px;
+    letter-spacing:4px;
+    margin-bottom: 50px;
+}
+.main .post .zhengwen{
+    display: block;
+    position: relative;
+    width: 860px;
+    height: 1900px;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: #fafde8;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.main .post .zhengwen img{
+    position: relative;
+    display: block;
+    width: 90%;
+    margin: 0 45px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+/* 下面的按钮 */
+.main .button{
+    position: relative;
+    margin-top: 100px;
+    float: right;
+    height: 60px;
+    width: 200px;
+    right: 20px;
+    bottom:-40px;
+}
+.main .button ul li{
+    float: right;
+    width: 55px;
+    height: 55px;
+    margin-right: 10px;
+    float: right;
+    cursor: pointer;
+}
+.main .button ul li img{
+    width: 100%;
+    float: right;
+}
+/* 评论区 */
+.comment{
+    position: relative;
+    margin:0 auto;
+    margin-top: 20px;
+    width: 900px;
+    height: 200px;
+    border: 5px solid #a9a9a9;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.comment_Pic{
+    position: absolute;
+    left: 20px;
+    top: 27px;
+    width: 120px;
+    height: 120px;
+    border: 2px solid #9b9c9b;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.comment_Pic img{
+    width:100%;
+}
+/* 评论按钮 */
+.comment .comment_Box{
+    display: block;
+    position: relative;
+    width: 700px;
+    height: 120px;
+    float: right;
+    right: 50px;
+    top: 30px;
+}
+.comment  .comment_Box textarea{
+    position: relative;
+    float: right;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 6px 8px;
+    resize: none;
+    font-size: 14px;
+    line-height: 22px;
+    border: 2px solid #a9a9a9;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: height .3s ease-in-out;
+    transition: height .3s ease-in-out;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.comment .comment_Box textarea:hover{
+    border: 3px solid #c0bfbf;
+}
+.comment .comment_Box textarea:focus{
+    outline: none;
+    border: 3px solid #99cc99b6;
+}
+
+.comment .comment_Button{
+    position: absolute;
+    width: 90px;
+    height: 30px;
+    right: 50px;
+    bottom:10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border: 3px solid #9b9c9b;
+    background-color: #99cc99;
+}
+.comment .comment_Button a{
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+.comment .comment_Button a:hover{
+    color: rgb(134, 133, 133); 
+}
+.comment .comment_Button:hover{
+    background-color: #ffffcc;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 3px 3px 3px #676867;
+}
+.top_Button{
+    position: fixed;
+    right: 70px;
+    bottom:40px;
+
+}
+
+footer{
+    height: 100px;
+    background-color: #99cc99;
+    clear:both;
+    margin-top: 50px;
+}

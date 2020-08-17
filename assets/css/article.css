@@ -1,0 +1,747 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #ffffcc;
+}
+li{
+    list-style: none;
+}
+@font-face{
+    font-family: 'Lemon-Regular';
+    src: url(../html/fonts/Lemon-Regular.ttf);
+}
+@font-face{
+    font-family: 'MATURASC';
+    src: url(../html/fonts/MATURASC.TTF);
+}
+header{
+    height: 67px;
+    background-image: linear-gradient(#fd9f6f,#e07540);
+    border-bottom: 5px solid #8d6b43d0;
+}
+.blog{
+    display: block;
+    position: relative;
+    width: 100px;
+    top: 10px;
+    left: 100px;
+    font-size: 40px;
+    font-weight: bold;
+    color:  rgb(100,100,100);
+    font-family: 'MATURASC','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.photo{
+    position: relative;
+    width: 140px;
+    height: 140px;
+    margin-top: 10px;
+    margin-left: 30px;
+    border:10px solid rgb(100, 100, 100);
+    border-top: 20px solid rgb(100,100,100);
+    border-left: 30px solid rgb(100,100,100);
+    border-right: 30px solid rgb(100,100,100);
+    background: url(../html/images/pic.png) no-repeat;
+    background-size: contain;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.main{
+    height:1600px;
+}
+.main .article{
+    position: relative;
+    width:700px;
+    height: 1390px;
+    float: left;
+    top: 40px;
+    left: 60px;
+    
+}
+.main .article li{
+    list-style: none;
+    position: relative;
+    height: 260px;
+    margin-bottom: 20px;
+    background-color: #fff1cc;
+    border-radius: 10px;
+    transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border:6px solid rgb(134, 134, 134);
+}
+.main .article li:hover{
+    box-shadow:5px 5px 5px rgb(109, 108, 108);
+    margin-left: -10px;
+    margin-top: -10px;
+}
+/* 点赞 */
+.main .article ul li .dianzan{
+    width:62px;
+    height: 60px;
+    position: relative;
+    bottom:20px;
+    right: 25px;
+    float: right;
+    background: url(images/icons8-桃心-64.png) no-repeat;
+    cursor: pointer;
+}
+.main .article ul li .dianzan:hover{
+    background: url(images/icons8-桃心.png);
+}
+.main .article ul li .dianzan:focus{
+    background: url(images/icons8-桃心.png);
+    outline: 0;
+}
+.nav{
+    position: fixed;
+    margin-left: 800px;
+    margin-top: 40px;
+    width:265px;
+    height: 400px;
+    background-color: #fd9f6f;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border:6px solid rgb(134, 134, 134);
+    z-index: 999;
+}
+.next {
+    position: absolute;
+    top: 1590px;
+    left: 640px;
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: #fd9f6f;
+    border:6px solid rgb(134, 134, 134);
+    z-index: 99;
+}
+.next a{
+    text-decoration: none;
+    font-family: 'Comic Sans MS','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 23px;
+    color: #6e6e6e;
+    font-weight: bold;
+}
+.next a:hover{
+    color: #929492;
+    
+}
+.next:hover{
+    background-color: #ffffcc;
+    box-shadow: 3px 3px 3px rgb(134, 134, 134);
+}
+.nav ul li {
+    background-color: #99cc66;
+}
+.nav .socialMedia{
+    position: relative;
+    left: 12px;
+    top: 10px;
+}
+ .nav .socialMedia img{
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+    border: 3px solid rgb(100,100,100);
+    box-sizing: border-box;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: 0 0 0 16px #99cc99 inset;
+}
+
+.socialMedia img:hover{
+    box-shadow: 0 0 0 16px #ffffcc inset;
+}
+.nav .topPost {
+    float: right;
+    position: relative;
+    top: 20px;
+    right: 20px;
+}
+.nav .topPost img{
+    height: 80px;
+    width: 80px;
+    transition: all 1s;
+    transform: rotate(-35deg);
+    -webkit-transform: rotate(-35deg);
+    -moz-transform: rotate(-35deg);
+    -ms-transform: rotate(-35deg);
+    -o-transform: rotate(-35deg);
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+.nav .topPost img:hover{
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+/* 博客博文 */
+.main .article ul li .picture{
+    position: relative;
+    float: left;
+    top: 15px;
+    left: 20px;
+    width: 250px;
+    height: 180px;
+    margin-right: 20px;
+    border:3px solid rgb(105, 105, 105);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    overflow: hidden;
+}
+.main .article ul li .picture img{
+    max-width: 100%;
+}
+.main .article ul li .post{
+    position: relative;
+    float: left;
+    height: 200px;
+    width: 340px;
+    top: 20px;
+    margin-left: 20px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.main .article ul li .post a{
+    text-decoration: none;
+    color: rgb(85, 69, 51);
+    font-size: 25px;
+}
+.main .article ul li .post a:hover{
+    color: #678a45;
+}
+.main .article ul li .post .text{
+    margin-top: 10px;
+    color: #6e6e6e;
+}
+/* 查看更多 */
+.main .article ul li .readMore{
+    width: 100px;
+    height: 40px;
+    float: left;
+    margin-left: 80px;
+    margin-top: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border: 3px solid rgb(134, 133, 133) ;
+    background-color: #99cc99;
+}
+.main .article ul li .readMore a{
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+.main .article ul li .readMore a:hover{
+    color: rgb(134, 133, 133);
+    
+}
+
+.main .article ul li .readMore:hover{
+    background-color: #ffffcc;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 3px 3px 3px #676867;
+}
+.main .article ul li:nth-child(1){
+    /*卡片从右到左动画效果*/animation: card1 2s 1;
+    -webkit-animation: card1 2s 1;
+    -moz-animation: card1 2s 1;
+    -ms-animation: card1 2s 1;
+    -o-animation: card1 2s 1;
+}
+/* 卡片从右到左动画效果 */
+/* 第一张卡片 */
+@keyframes card1{
+    0% {
+    right: -1200px;
+    transform: rotate(9deg);
+    -webkit-transform: rotate(9deg);
+    -moz-transform: rotate(9deg);
+    -ms-transform: rotate(9deg);
+    -o-transform: rotate(9deg);
+}
+    100%{right: 0;}
+}
+@-moz-keyframes card1{
+    0% {
+    right: -1200px;
+    transform: rotate(9deg);
+    -webkit-transform: rotate(9deg);
+    -moz-transform: rotate(9deg);
+    -ms-transform: rotate(9deg);
+    -o-transform: rotate(9deg);
+}
+    100%{right: 0;}
+}
+@-webkit-keyframes card1{
+    0% {
+    right: -1200px;
+    transform: rotate(9deg);
+    -webkit-transform: rotate(9deg);
+    -moz-transform: rotate(9deg);
+    -ms-transform: rotate(9deg);
+    -o-transform: rotate(9deg);
+}
+    100%{right: 0;}
+}
+@-o-keyframes card1{
+    0% {
+    right: -1200px;
+    transform: rotate(9deg);
+    -webkit-transform: rotate(9deg);
+    -moz-transform: rotate(9deg);
+    -ms-transform: rotate(9deg);
+    -o-transform: rotate(9deg);
+}
+    100%{right: 0;}
+}
+.main .article ul li:nth-child(2){
+    /*卡片从右到左动画效果*/animation: card2 2s 1;
+    -webkit-animation: card2 2s 1;
+    -moz-animation: card2 2s 1;
+    -ms-animation: card2 2s 1;
+    -o-animation: card2 2s 1;
+}
+/* 第二张卡片 */
+@keyframes card2{
+    20% {
+    right: -1200px;
+    transform: rotate(9deg);
+    -webkit-transform: rotate(9deg);
+    -moz-transform: rotate(9deg);
+    -ms-transform: rotate(9deg);
+    -o-transform: rotate(9deg);
+}
+    100%{right: 0;}
+}
+@-moz-keyframes card2{
+    20% {
+    right: -1200px;
+    transform: rotate(9deg);
+    -webkit-transform: rotate(9deg);
+    -moz-transform: rotate(9deg);
+    -ms-transform: rotate(9deg);
+    -o-transform: rotate(9deg);
+}
+    100%{right: 0;}
+}
+@-webkit-keyframes card2{
+    20% {
+    right: -1200px;
+    transform: rotate(9deg);
+    -webkit-transform: rotate(9deg);
+    -moz-transform: rotate(9deg);
+    -ms-transform: rotate(9deg);
+    -o-transform: rotate(9deg);
+}
+    100%{right: 0;}
+}
+@-o-keyframes card2{
+    20% {
+    right: -1200px;
+    transform: rotate(9deg);
+    -webkit-transform: rotate(9deg);
+    -moz-transform: rotate(9deg);
+    -ms-transform: rotate(9deg);
+    -o-transform: rotate(9deg);
+}
+    100%{right: 0;}
+}
+.main .article ul li:nth-child(3){
+    /*卡片从右到左动画效果*/animation: card3 2s 1;
+    -webkit-animation: card3 2s 1;
+    -moz-animation: card3 2s 1;
+    -ms-animation: card3 2s 1;
+    -o-animation: card3 2s 1;
+}
+/* 第三张卡片 */
+@keyframes card3{
+    40% {
+    right: -1200px;
+    transform: rotate(9deg);
+    -webkit-transform: rotate(9deg);
+    -moz-transform: rotate(9deg);
+    -ms-transform: rotate(9deg);
+    -o-transform: rotate(9deg);
+}
+    100%{right: 0;}
+}
+@-moz-keyframes card3{
+    40% {
+    right: -1200px;
+    transform: rotate(9deg);
+    -webkit-transform: rotate(9deg);
+    -moz-transform: rotate(9deg);
+    -ms-transform: rotate(9deg);
+    -o-transform: rotate(9deg);
+}
+    100%{right: 0;}
+}
+@-webkit-keyframes card3{
+    40% {
+    right: -1200px;
+    transform: rotate(9deg);
+    -webkit-transform: rotate(9deg);
+    -moz-transform: rotate(9deg);
+    -ms-transform: rotate(9deg);
+    -o-transform: rotate(9deg);
+}
+    100%{right: 0;}
+}
+@-o-keyframes card3{
+    40% {
+    right: -1200px;
+    transform: rotate(9deg);
+    -webkit-transform: rotate(9deg);
+    -moz-transform: rotate(9deg);
+    -ms-transform: rotate(9deg);
+    -o-transform: rotate(9deg);
+}
+    100%{right: 0;}
+}
+.main .article ul li:nth-child(4){
+    /*卡片从右到左动画效果*/animation: card4 2s 1;
+    -webkit-animation: card4 2s 1;
+    -moz-animation: card4 2s 1;
+    -ms-animation: card4 2s 1;
+    -o-animation: card4 2s 1;
+}
+/* 第四张卡片 */
+@keyframes card4{
+    60% {
+    right: -1200px;
+    transform: rotate(9deg);
+    -webkit-transform: rotate(9deg);
+    -moz-transform: rotate(9deg);
+    -ms-transform: rotate(9deg);
+    -o-transform: rotate(9deg);
+}
+    100%{right: 0;}
+}
+@-moz-keyframes card4{
+    60% {
+    right: -1200px;
+    transform: rotate(9deg);
+    -webkit-transform: rotate(9deg);
+    -moz-transform: rotate(9deg);
+    -ms-transform: rotate(9deg);
+    -o-transform: rotate(9deg);
+}
+    100%{right: 0;}
+}
+@-webkit-keyframes card4{
+    60% {
+    right: -1200px;
+    transform: rotate(9deg);
+    -webkit-transform: rotate(9deg);
+    -moz-transform: rotate(9deg);
+    -ms-transform: rotate(9deg);
+    -o-transform: rotate(9deg);
+}
+    100%{right: 0;}
+}
+@-o-keyframes card4{
+    60% {
+    right: -1200px;
+    transform: rotate(9deg);
+    -webkit-transform: rotate(9deg);
+    -moz-transform: rotate(9deg);
+    -ms-transform: rotate(9deg);
+    -o-transform: rotate(9deg);
+}
+    100%{right: 0;}
+}
+/* 第五张卡片 */
+.main .article ul li:nth-child(5){
+    /*卡片从右到左动画效果*/animation: card5 2s 1;
+    -webkit-animation: card5 2s 1;
+    -moz-animation: card5 2s 1;
+    -ms-animation: card5 2s 1;
+    -o-animation: card5 2s 1;
+}
+@keyframes card5{
+    80% {
+    right: -1200px;
+    transform: rotate(9deg);
+    -webkit-transform: rotate(9deg);
+    -moz-transform: rotate(9deg);
+    -ms-transform: rotate(9deg);
+    -o-transform: rotate(9deg);
+}
+    100%{right: 0;}
+}
+@-moz-keyframes card5{
+    80% {
+    right: -1200px;
+    transform: rotate(9deg);
+    -webkit-transform: rotate(9deg);
+    -moz-transform: rotate(9deg);
+    -ms-transform: rotate(9deg);
+    -o-transform: rotate(9deg);
+}
+    100%{right: 0;}
+}
+@-webkit-keyframes card5{
+    80% {
+    right: -1200px;
+    transform: rotate(9deg);
+    -webkit-transform: rotate(9deg);
+    -moz-transform: rotate(9deg);
+    -ms-transform: rotate(9deg);
+    -o-transform: rotate(9deg);
+}
+    100%{right: 0;}
+}
+@-o-keyframes card5{
+    80% {
+    right: -1200px;
+    transform: rotate(9deg);
+    -webkit-transform: rotate(9deg);
+    -moz-transform: rotate(9deg);
+    -ms-transform: rotate(9deg);
+    -o-transform: rotate(9deg);
+}
+    100%{right: 0;}
+}
+/* 菜单栏 */
+.menu{
+    height: 35px;
+    width: 60px;
+    position: absolute;
+    top: 15px;
+    right: 140px;
+    background: #99cc99;
+    border: 5px solid rgb(134, 133, 133);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    z-index: 1000;
+}
+
+.menu-icon{
+    background: url(../html/images/sanxian.png) no-repeat;
+    height: 35px;
+    width: 35px;
+    margin: 6px 15px;
+}
+.menu:hover{
+    cursor: pointer;
+    background-color: #ffac83;
+}
+
+.menu aside{
+    display: none;
+    width: 100px;
+    height: 155px;
+    background-color: #ffac83;
+    position: absolute;
+    left: -25px;
+    top: 38px;
+    z-index: 99;
+    border: 5px solid rgb(134, 133, 133);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.menu:hover aside{
+    display: block;
+}
+li{
+    list-style: none;
+}
+.menu aside ul li {
+    height: 30px;
+    padding-bottom: 5px;
+    padding-top: 15px;
+    text-align: center;
+    color: rgb(134, 133, 133);
+    cursor: pointer;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+.menu aside ul li:hover{
+    background-color: #ffffcc;
+    box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.2) ;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+.menu aside ul li a{
+    text-decoration: none;
+    color: rgb(114, 104, 82);
+}
+.menu aside ul li a:hover{
+    color: #a9aca9;
+}
+
+.topPost aside{
+    display: none;
+    overflow: hidden;
+}
+.topPost:hover aside{
+    display: block;
+    position: absolute;
+    top: -7px;
+    right: 72px;
+    width: 260px;
+    height: 170px;
+    border: 4px solid #926e45;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color:#e28557;
+
+}
+.topPost aside ul li:nth-child(1){
+    color: #3c4435;
+    height: 35px;
+    width: 250px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 3px;
+    margin-top: 5px;
+    background-color:#e28557;
+    overflow: hidden;
+}
+.topPost aside ul li:nth-child(2),
+.topPost aside ul li:nth-child(3),
+.topPost aside ul li:nth-child(4),
+.topPost aside ul li:nth-child(5)
+{
+    height: 50px;
+    width: 115px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 2px solid #926e45;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    background-color: #f5d9a6;
+    -moz-box-shadow: inset 0 0.2em 0 rgba(255,255,255,0.4), inset 0 0 0.2em rgba(255,255,255,0.9);
+    -webkit-box-shadow: inset 0 0.2em 0 rgba(255,255,255,0.4), inset 0 0 0.2em rgba(255,255,255,0.9);
+    box-shadow: inset 0 0.2em 0 rgba(255,255,255,0.4), inset 0 0 0.2em rgba(255,255,255,0.9);
+    overflow: hidden;
+}
+
+.topPost aside ul li a{
+    text-decoration: none;
+    line-height: 50px;
+    color: rgb(85, 69, 51);
+    margin-left: 4px;
+    
+}
+/* 文字滚动动画 */
+.topPost aside ul li .text{
+    animation:text 10s   linear infinite ;
+    -webkit-animation:text 10s   linear infinite ;
+    -moz-animation: text 10s  linear infinite;
+    -ms-animation: text 10s  linear infinite;
+    -o-animation: text 10s  linear infinite;
+}
+@keyframes text{
+    0%{ transform: translateX(100px); -webkit-transform: translateX(100px); -moz-transform: translateX(100px); -ms-transform: translateX(100px); -o-transform: translateX(100px);
+}
+    100%{ transform: translateX(-50%); -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%);
+}
+}
+@-o-keyframes text{
+    0%{ transform: translateX(100px); -webkit-transform: translateX(100px); -moz-transform: translateX(100px); -ms-transform: translateX(100px); -o-transform: translateX(100px);
+}
+    100%{ transform: translateX(-50%); -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%);
+}
+}
+@-moz-keyframes text{
+    0%{ transform: translateX(100px); -webkit-transform: translateX(100px); -moz-transform: translateX(100px); -ms-transform: translateX(100px); -o-transform: translateX(100px);
+}
+    100%{ transform: translateX(-50%); -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%);
+}
+}
+@-webkit-keyframes text{
+    0%{ transform: translateX(100px); -webkit-transform: translateX(100px); -moz-transform: translateX(100px); -ms-transform: translateX(100px); -o-transform: translateX(100px);
+}
+    100%{ transform: translateX(-50%); -webkit-transform: translateX(-50%); -moz-transform: translateX(-50%); -ms-transform: translateX(-50%); -o-transform: translateX(-50%);
+}
+}
+
+.topPost aside ul li a:hover{
+    color: rgb(138, 112, 83);
+}
+
+footer{
+    height: 100px;
+    background-color: #99cc99;
+    clear:both;
+}
